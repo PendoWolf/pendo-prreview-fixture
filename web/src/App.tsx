@@ -33,6 +33,8 @@ export default function App() {
     <main style={{ fontFamily: "system-ui, sans-serif", maxWidth: 480, margin: "4rem auto", textAlign: "center" }}>
       <h1>QAWolf Demo</h1>
 
+      {/* Counter display — incremented/decremented by the buttons below and persisted
+          via the Express API. Starts at 0 and resets to 0 on Reset. */}
       <p data-testid="counter-value" style={{ fontSize: "3rem", margin: "1rem 0" }}>
         {state.counter}
       </p>
