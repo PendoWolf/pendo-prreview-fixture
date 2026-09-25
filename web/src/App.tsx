@@ -44,6 +44,9 @@ export default function App() {
         <button data-testid="btn-increment" onClick={() => run("increment", api.increment)}>
           Increment
         </button>
+        {/* Decrement: reduces the counter by 1 with no lower bound (negative values
+            are allowed), sets lastAction to "decrement", and fires the
+            demo-decrement Track Event via trackEvent(). */}
         <button data-testid="btn-decrement" onClick={() => run("decrement", api.decrement)}>
           Decrement
         </button>
