@@ -47,6 +47,8 @@ export default function App() {
         <button data-testid="btn-decrement" onClick={() => run("decrement", api.decrement)}>
           Decrement
         </button>
+        {/* Reset: POSTs to /api/reset, which sets the counter back to 0 and
+            updates lastAction to "reset". Fires the demo-reset Track Event. */}
         <button data-testid="btn-reset" onClick={() => run("reset", api.reset)}>
           Reset
         </button>
