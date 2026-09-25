@@ -33,6 +33,9 @@ export default function App() {
     <main style={{ fontFamily: "system-ui, sans-serif", maxWidth: 480, margin: "4rem auto", textAlign: "center" }}>
       <h1>QAWolf Demo</h1>
 
+      {/* The counter value is stored in-memory on the Express server and starts
+          at 0 on each server restart. Every button action below updates it via
+          the REST API and fires a corresponding Pendo Track Event. */}
       <p data-testid="counter-value" style={{ fontSize: "3rem", margin: "1rem 0" }}>
         {state.counter}
       </p>
