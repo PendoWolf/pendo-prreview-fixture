@@ -44,6 +44,8 @@ export default function App() {
         <button data-testid="btn-increment" onClick={() => run("increment", api.increment)}>
           Increment
         </button>
+        {/* Decrement: calls the API to lower the counter by 1, shows the returned state,
+            and fires the "demo-decrement" Track Event only if the request succeeds. */}
         <button data-testid="btn-decrement" onClick={() => run("decrement", api.decrement)}>
           Decrement
         </button>
